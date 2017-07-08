@@ -1,7 +1,7 @@
 (ns clj-krkr.lines)
 (require '[clojure.string :as str])
 
-(def fmt #"[\[^\]*]")
+(def fmt #"\[[^'^,^\]]+\]")
 (def cmd #"^@.*")
 (def cmt #"^\;.*")
 (def spk #"【.*】")
